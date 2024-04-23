@@ -1,14 +1,4 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobiwave/simplefolio/
-  Readme: https://github.com/cobiwave/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
--->
+
 <!DOCTYPE html>
 <html lang="en" class="sr">
   <head>
@@ -16,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
     <!-- Todo: put here your site title -->
-    <title>[Your name here] | Developer</title>
+    <title>Roberto Mortera | Front End Developer</title>
     <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
     <!-- Todo: improve your SEO by adding a small description of you -->
@@ -38,17 +32,56 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
+ 
+  
+
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
-    <div id="top"></div>
+<div id="top"></div>
+    <!-- **** Navbar **** -->
+
+    <header class="header" id="header">
+      <nav class="navBar" id="navBar">
+      <div class="container">
+      
+        <div class="navbar-links">
+          <a
+          class="navbar__text"
+            rel="noreferrer"
+            href="#about"
+          >
+            About me
+          </a>
+          <a
+          class="navbar__text"
+            rel="noreferrer"
+            href="#projects"
+           
+          >
+          Projects
+          </a>
+          <a
+          class="navbar__text"
+            rel="noreferrer"
+            href="#contact"
+           
+          >
+          Contact
+          </a>
+        </div>
+  
+      </div>
+    <nav/></header>
+    
+  
 
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          Hi, my name is <span class="text-color-main">Roberto Mortera</span>
           <br />
-          I'm the Unknown Developer.
+          I'm a <span>Front End Developer.</span>
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
@@ -71,7 +104,7 @@
                 class="img-fluid rounded shadow-lg"
                 height="auto"
                 width="300px"
-                src="assets/profile.jpg"
+                src="assets/profile_photo.png"
                 alt="Profile Image"
               />
             </div>
@@ -79,18 +112,26 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
+                I am a self-taught front end developer. A couple of years ago I
+                decided to enter the world of web development and programming, I
+                have acquired knowledge to plan and create interesting and good
+                quality projects. I have always been someone determined and
+                committed to what I do, once I start a project, I spend the
+                necessary time to obtain a better result and finish it in good
+                shape.
               </p>
               <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+                Some of my hobbies are watching movies, specially animated and
+                horror ones, going for a walk with my dogs, as well as working
+                out at home, cooking and going out for a coffee (I am a coffee
+                fan ☕) with my friends or family.
               </p>
               <span class="d-flex mt-3">
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--resume"
-                  href="assets/resume.pdf"
+                  href="https://drive.google.com/file/d/1DdhXaAQQOL3wextMCEIRNlCQx3Jau7lA/view?usp=sharing"
                 >
                   View Resume
                 </a>
@@ -98,7 +139,55 @@
             </div>
           </div>
         </div>
+
+        <hr class="skills-hr"/>
+        <h1>My skills</h1>
+
+            <div class="skills">
+              
+              <span class="d-flex mt-3">
+                <p class="cta-btn cta-btn--resume">
+                  JavaScript
+                </p>
+              </span>
+           
+               <span class="d-flex mt-3">
+                <p class="cta-btn cta-btn--resume">
+                  React
+                </p>
+              </span>
+           
+                                                 
+                <span class="d-flex mt-3">
+                  <p class="cta-btn cta-btn--resume">
+                    HTML
+                  </p>
+                </span>
+
+                <span class="d-flex mt-3">
+                  <p class="cta-btn cta-btn--resume">
+                    CSS
+                  </p>
+                </span>
+
+                <span class="d-flex mt-3">
+                  <p class="cta-btn cta-btn--resume">
+                    Tailwind
+                  </p>
+                </span>
+
+                <span class="d-flex mt-3">
+                  <p class="cta-btn cta-btn--resume">
+                    GitHub
+                  </p>
+                </span>
+                           
+            </div>
+          
+          
+        
       </div>
+
     </section>
     <!-- /END About Section -->
 
@@ -106,25 +195,23 @@
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
+          <h2 class="section-title dark-blue-text">Personal Projects</h2>
 
           <!-- Notice: each .row is a project -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title">Fast Pizza App</h3>
                 <div>
                   <p class="mb-4">
-                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
+                    Made with React and styled with Tailwind CSS, it is an application that allows the user to enter their name, see a complete menu of pizzas using an API, which displays an image, the name of the pizza, its ingredients and price. The user can choose one or more pizzas, as well as reduce the quantity or eliminate it, add it to the shopping cart and place the order, and then indicate the address and information to show the personalized order with the user's data, the total to pay and the estimated time it will arrive at the entered address.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://the-fast-pizza-app.netlify.app/"
                 >
                   See Live
                 </a>
@@ -132,7 +219,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/rmortera/fast-react-pizza.git"
                 >
                   Source Code
                 </a>
@@ -140,7 +227,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://the-fast-pizza-app.netlify.app/" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -151,7 +238,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/projects/fast-pizza.png"
                     />
                   </div>
                 </a>
@@ -160,23 +247,21 @@
           </div>
           <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
-          <div class="row">
+           <!-- Notice: each .row is a project -->
+           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">My Shopping List</h3>
                 <div>
                   <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
+                    Made with React, JavaScript, HTML and CSS. App that allows the user enter any item, add it to the list, check it, delete it and sort them by alphabetical order, input order or if it is checked already, as well as clear the complete list.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://my-shoppinglist-2024.netlify.app/"
                 >
                   See Live
                 </a>
@@ -184,7 +269,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/rmortera/my-shopping-list.git"
                 >
                   Source Code
                 </a>
@@ -192,7 +277,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://my-shoppinglist-2024.netlify.app/" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -203,7 +288,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/projects/shopping-list.png"
                     />
                   </div>
                 </a>
@@ -212,22 +297,23 @@
           </div>
           <!-- /END Project -->
 
+       
+
           <!-- Notice: each .row is a project -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                <h3 class="project-wrapper__text-title">Tip Calculator</h3>
                 <div>
                   <p class="mb-4">
-                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
+                    Made with React, JavaScript, HTML and CSS, it is an application that when entering an amount in the Bill input and selecting the number of people, indicates the tip that the user must pay for the service they requested. You have the option to choose between different percentages or nothing according to the service received, as well as the amount for each person and the total.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://my-tips-calculator-app.netlify.app/"
                 >
                   See Live
                 </a>
@@ -235,7 +321,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/rmortera/tip-calculator-app.git"
                 >
                   Source Code
                 </a>
@@ -243,7 +329,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://my-tips-calculator-app.netlify.app/" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -254,7 +340,107 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/projects/tip-calculator.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+             <!-- Notice: each .row is a project -->
+             <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="project-wrapper__text load-hidden">
+                  <h3 class="project-wrapper__text-title">The Infinite Scroll</h3>
+                  <div>
+                    <p class="mb-4">
+                      Page in which when you scroll down, it simulates an infinite list of photographs extracted from the Unsplash API.
+                    </p>
+                  </div>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="https://the-infinite-scroll.netlify.app/"
+                  >
+                    See Live
+                  </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn text-color-main"
+                    href="https://github.com/rmortera/infinite-scroll.git"
+                  >
+                    Source Code
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12">
+                <div class="project-wrapper__image load-hidden">
+                  <a rel="noreferrer" href="https://the-infinite-scroll.netlify.app/" target="_blank">
+                    <div
+                      data-tilt
+                      data-tilt-max="4"
+                      data-tilt-glare="true"
+                      data-tilt-max-glare="0.5"
+                      class="thumbnail rounded js-tilt"
+                    >
+                      <img
+                        alt="Project Image"
+                        class="img-fluid"
+                        src="assets/projects/infinite-scroll.png"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">The Quote Generator</h3>
+                <div>
+                  <p class="mb-4">
+                    This project was made with React, JavaScript, HMTL, CSS. It works by using an external API to generate random quotes and their author. You can post the quote on your X account by just clicking on the "X" button, as well as show a different quote with the "Next Quote" button.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://the-quote-generator-app.netlify.app/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/rmortera/quote-generator.git"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://the-quote-generator-app.netlify.app/" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/projects/quote-generator.png"
                     />
                   </div>
                 </a>
@@ -272,13 +458,13 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <p class="contact-wrapper__text">Let's get in touch</p>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
+            href="mailto:robmrtra@gmail.com"
+            >robmrtra@gmail.com</a
           >
         </div>
       </div>
@@ -291,14 +477,27 @@
         <a rel="noreferrer" href="#top" class="back-to-top">
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
+
         <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
+          <a
+            rel="noreferrer"
+            href="https://twitter.com/robmortera93"
+            target="_blank"
+          >
+            <i class="fa fa-x-twitter fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/roberto-mortera/"
+            target="_blank"
+          >
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://github.com/rmortera"
+            target="_blank"
+          >
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
@@ -307,39 +506,10 @@
 
         <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
         <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/simplefolio on GitHub"
-            >Star</a
-          >
+          Roberto Mortera - Front End Developer
         </p>
       </div>
-    </footer>
-    <!-- /END Footer Section -->
-
+    <footer/>
     <script defer type="module" src="index.js"></script>
   </body>
 </html>
